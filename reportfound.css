@@ -1,0 +1,55 @@
+/* Main AnchorPane background and padding */
+.mainFxmlClass {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Label header */
+.label {
+    -fx-text-fill: #222;
+    -fx-font-family: "Arial";
+}
+
+/* TextField and TextArea styling */
+.text-field, .text-area {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-prompt-text-fill: #888;
+}
+
+/* ImageView border styling */
+#itemImageView {
+    -fx-effect: dropshadow(gaussian, #333, 5, 0.2, 1, 1);
+    -fx-border-color: #999;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Upload and Submit Button Styling */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20 10 20; /* Top 10px, right 20px, bottom 10px, left 20px */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0.3, 0, 2);
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+}
+
+/* Hover effect */
+.button:hover {
+    -fx-background-color: #1a252f;
+    -fx-border-color: #000;
+    -fx-effect: dropshadow(gaussian, black, 8, 0.5, 0, 0);
+}

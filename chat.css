@@ -1,0 +1,75 @@
+/* Background styling for the anchor pane */
+#anchorPane {
+    -fx-background-image: url("/IMG/BACK.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 0.9;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Header styling for BISU Label */
+#BISU {
+    -fx-text-fill: black;  /* Set text color to black */
+    -fx-font-weight: bold; /* Make the font bold */
+    -fx-font-size: 25px;   /* Set font size */
+}
+
+/* Styling for the Center VBox container */
+#centerBackgroundHbox {
+    -fx-spacing: 25;
+}
+
+/* Styling for Lost and Found buttons */
+#lostButton, #foundButton {
+    -fx-background-color: white;
+    -fx-border-radius: 15;
+    -fx-padding: 10;
+    -fx-font-size: 16px;
+    -fx-text-fill: black;
+    -fx-background-insets: 0, 1;
+    -fx-border-color: #e0e0e0;
+    -fx-pref-width: 250px;
+    -fx-border-width: 2px;
+}
+
+/* Hover effect for Lost and Found buttons */
+#lostButton:hover, #foundButton:hover {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-text-fill: #333333;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 5);
+}
+
+/* Navigation buttons */
+HBox > Button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-min-height: 80px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 2px;
+}
+
+/* Improved hover effect for navigation buttons */
+HBox > Button:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 5);
+}
+
+/* Active navigation button */
+Button:active {
+    -fx-background-color: #e0e0e0;
+}
+
+/* Style for image views inside buttons */
+Button > graphic > ImageView {
+    -fx-fit-height: 60px;
+    -fx-fit-width: 60px;
+    -fx-preserve-ratio: true;
+}

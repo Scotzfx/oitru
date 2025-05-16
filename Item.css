@@ -1,0 +1,6 @@
+#containerItem{
+    -fx-background-color: #FFFFFF;
+}
+.menu-button {
+    -fx-visible: false;
+}

@@ -1,0 +1,58 @@
+/* Background and branding */
+#anchorPane {
+    -fx-background-image: url("/IMG/BACK.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 0.9;
+    -fx-background-repeat: no-repeat; 
+}
+
+#BISU {
+    -fx-font-family: "Arial";
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #030303;
+    -fx-opacity: 1.0;
+    -fx-padding: 30px 30px 10px 30px;
+}
+
+/* General Label Styling */
+.label {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #0A3D62;
+}
+
+/* Large Header Label (e.g. "Register") */
+.label:first-of-type {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0A3D62;
+}
+
+/* TextField and PasswordField styling */
+.text-field, .password-field {
+    -fx-font-size: 14px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #f0fdfd;
+    -fx-border-color: #0A3D62;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 0px 10px 0px 10px;
+    -fx-text-fill: #1C1C1C;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #0A3D62;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: #3CBA92;
+}

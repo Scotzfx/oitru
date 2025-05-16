@@ -1,0 +1,148 @@
+/* AnchorPane Background */
+#anchorPane {
+    -fx-background-image: url("/IMG/BACK.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 0.9;
+    -fx-background-repeat: no-repeat;
+}
+
+#BISU {
+    -fx-text-fill: black;  /* Set text color to black */
+    -fx-font-weight: bold; /* Make the font bold */
+    -fx-font-size: 25px;   /* Set font size if necessary */
+}
+/* Center VBox containing Labels and Buttons */
+#centerBackgroundHbox {
+    -fx-spacing: 25;
+}
+
+
+/* Hover Effect for Lost/Found Buttons (Glowing Border) */
+#lostButton:hover, #foundButton:hover {
+    -fx-background-color: white;  /* Keep background color white */
+    -fx-border-color: black;      /* Set border color to black on hover */
+    -fx-text-fill: #333333;       /* Darken text on hover */
+    -fx-border-width: 3px;        /* Thicker border when hovered */
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 5); /* Dark glow on border */
+}
+
+/* Navigation Buttons */
+HBox > Button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-min-height: 80px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 2px;
+}
+
+/* Improved Hover Effect for Navigation Buttons (Glow Border) */
+HBox > Button:hover {
+    -fx-background-color: #f0f0f0; /* Light background on hover */
+    -fx-border-color: black;       /* Set border to black on hover */
+    -fx-border-width: 3px;         /* Thicker border on hover */
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 5); /* Glowing black border */
+}
+
+/* Active Navigation Button (highlight) */
+Button:active {
+    -fx-background-color: #e0e0e0;  /* Slightly darker gray when active */
+}
+
+/* Style for image views inside buttons */
+Button > graphic > ImageView {
+    -fx-fit-height: 60px;
+    -fx-fit-width: 60px;
+    -fx-preserve-ratio: true;
+}
+/* Main anchor pane background */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+}
+
+/* Header styles */
+.header-box {
+    -fx-padding: 15px;
+    -fx-background-color: #2c3e50;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.header-label {
+    -fx-text-fill: white;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+#bisuLabel{
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+/* Profile section styles */
+.profile-container {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-padding: 30px;
+}
+
+.profile-image {
+    -fx-background-radius: 60px;
+    -fx-border-radius: 60px;
+    -fx-border-width: 3px;
+    -fx-border-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.profile-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+.username-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2980b9;
+}
+
+/* Logout button */
+.logout-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+     -fx-padding: 10px 25px 10px 25px;
+    -fx-cursor: hand;
+}
+
+.logout-button:hover {
+    -fx-background-color: #c0392b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+/* Navigation bar */
+.nav-bar {
+    -fx-background-color: #2c3e50;
+    -fx-padding: 10px;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-background-radius: 5px;
+}
+
+/* Image view in buttons */
+.nav-icon {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}

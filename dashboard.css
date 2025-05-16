@@ -1,0 +1,76 @@
+/* AnchorPane Background */
+#anchorPane {
+    -fx-background-image: url("/IMG/BACK.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-opacity: 0.9;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Header Styling for BISU Label */
+#BISU {
+    -fx-text-fill: black;  /* Set text color to black */
+    -fx-font-weight: bold; /* Make the font bold */
+    -fx-font-size: 25px;   /* Set font size if necessary */
+}
+
+/* Center VBox containing Labels and Buttons */
+#centerBackgroundHbox {
+    -fx-spacing: 25;
+}
+
+/* Styling for Lost/Found Buttons in Center */
+#lostButton, #foundButton {
+    -fx-background-color: white;
+    -fx-border-radius: 15;
+    -fx-padding: 10;
+    -fx-font-size: 16px;
+    -fx-text-fill: black;
+    -fx-background-insets: 0, 1;
+    -fx-border-color: #e0e0e0;
+    -fx-pref-width: 250px; /* Stretch buttons to be wider */
+    -fx-effect: none;  /* Remove any previous shadow effect */
+    -fx-border-width: 2px;
+}
+
+/* Hover Effect for Lost/Found Buttons (Glowing Border) */
+#lostButton:hover, #foundButton:hover {
+    -fx-background-color: white;  /* Keep background color white */
+    -fx-border-color: black;      /* Set border color to black on hover */
+    -fx-text-fill: #333333;       /* Darken text on hover */
+    -fx-border-width: 3px;        /* Thicker border when hovered */
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 5); /* Dark glow on border */
+}
+
+/* Navigation Buttons */
+HBox > Button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-radius: 10;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-min-height: 80px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 2px;
+}
+
+/* Improved Hover Effect for Navigation Buttons (Glow Border) */
+HBox > Button:hover {
+    -fx-background-color: #f0f0f0; /* Light background on hover */
+    -fx-border-color: black;       /* Set border to black on hover */
+    -fx-border-width: 3px;         /* Thicker border on hover */
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 5); /* Glowing black border */
+}
+
+/* Active Navigation Button (highlight) */
+Button:active {
+    -fx-background-color: #e0e0e0;  /* Slightly darker gray when active */
+}
+
+/* Style for image views inside buttons */
+Button > graphic > ImageView {
+    -fx-fit-height: 60px;
+    -fx-fit-width: 60px;
+    -fx-preserve-ratio: true;
+}
