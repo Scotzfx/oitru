@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.ChatController"
+            stylesheets="@/CSS/chat.css">
+
+    <!-- Left: List of accounts -->
+    <left>
+        <VBox prefWidth="200" style="-fx-background-color: #F0F0F0;">
+            <Label text="Chats" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-padding: 10 0 0 10;" />
+            <ListView fx:id="accountListView" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </left>
+
+    <!-- Center: Chat history and input -->
+    <center>
+        <VBox style="-fx-background-color: #FFFFFF;" VBox.vgrow="ALWAYS">
+
+            <!-- Chat history -->
+            <ScrollPane fx:id="chatScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS">
+                <VBox fx:id="chatContainer" spacing="10">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+                </VBox>
+            </ScrollPane>
+
+            <!-- Chat input -->
+            <HBox fx:id="chatInputContainer" spacing="10" style="-fx-background-color: #F9F9F9;">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button fx:id="fileButton" text="📎" prefWidth="40" />
+                <TextField fx:id="messageInput" HBox.hgrow="ALWAYS" promptText="Type a message..." />
+                <Button fx:id="sendButton" text="Send" onAction="#handleSendMessage"  />
+            </HBox>
+
+        </VBox>
+    </center>
+
+    <!-- Bottom: Navigation Buttons -->
+    <bottom>
+        <!-- Navigation buttons at the bottom -->
+        <HBox fx:id="navBar" spacing="10.0" style="-fx-padding: 10;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" HBox.hgrow="ALWAYS">
+            <children>
+                <Button fx:id="dashboardButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#DashBoardUI" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                    <graphic>
+                        <ImageView fitHeight="69.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/IMG/LFlogo.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="lostButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#LostUI" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                    <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/IMG/icon1.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="foundButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#FoundUI" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                    <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/IMG/icon2.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="chatButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#ChatUI" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                    <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/IMG/message_icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <!-- Fifth Button (Profile, for example) -->
+                <Button fx:id="profileButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#ProfileUI" prefHeight="100.0" HBox.hgrow="ALWAYS">
+                    <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../IMG/Profile.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+
+</BorderPane>
